@@ -24,6 +24,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configura
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc-Area-tut-1", "Mvc-Area-tut-1\Mvc-Area-tut-1.csproj", "{DD791D9A-D7E5-46A7-B6DF-40E0B6C33226}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcLoginLogout", "MvcLoginLogout\MvcLoginLogout.csproj", "{26A3E172-0908-41F6-BC6A-1DB0E840BFE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{DD791D9A-D7E5-46A7-B6DF-40E0B6C33226}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD791D9A-D7E5-46A7-B6DF-40E0B6C33226}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD791D9A-D7E5-46A7-B6DF-40E0B6C33226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26A3E172-0908-41F6-BC6A-1DB0E840BFE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26A3E172-0908-41F6-BC6A-1DB0E840BFE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26A3E172-0908-41F6-BC6A-1DB0E840BFE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26A3E172-0908-41F6-BC6A-1DB0E840BFE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
