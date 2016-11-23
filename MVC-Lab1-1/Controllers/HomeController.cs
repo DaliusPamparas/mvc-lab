@@ -14,10 +14,11 @@ namespace MVC_Lab1_1.Controllers
         public ViewResult Index()
         {
          
-            List<photo> Gallery = new List<photo>();
+            //List<photo> Gallery = new List<photo>();
 
 
             ViewBag.ArticleName = "Gallery";
+            
             return View();
 
         }

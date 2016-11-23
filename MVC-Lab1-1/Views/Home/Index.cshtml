@@ -14,12 +14,13 @@
     <div> 
       <h1>@ViewBag.ArticleName </h1>
         <div>
-           gallery place
+            @Html.ActionLink("Administration login page", "Index", "Home", new { area = "Admin" }, null);
+
         </div>
         <div>
-            @Html.ActionLink("Power link to Add Image to gallery", "addphoto")
-            
+           gallery place here
         </div>
+      
     </div>
 </body>
 </html>
