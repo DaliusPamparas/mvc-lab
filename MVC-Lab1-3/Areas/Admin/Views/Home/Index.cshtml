@@ -1,18 +1,25 @@
 ﻿
+@using MVC_Lab1_3.Areas.Admin.Models
 @{
-    Layout = null;
+    ViewBag.Title = "Index";
+
 }
 
-<!DOCTYPE html>
+<h1>
+    Gallery addministration
+</h1>
+@{ 
+    var user = Session["user"] as User;
+    
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Admin</title>
-</head>
-<body>
-    <div> Admin page
-    </div>
-    <div>@Html.ActionLink("Home page - gallery", "Index", "Home", new { area = "" }, null)</div>
-</body>
-</html>
+}
+
+@if (user != null)
+{
+  <H2>Welcome  @user.Name
+    @Html.ActionLink("Logout", "Logout", "Login");
+
+    </h2>
+    <div>Add image to gallery</div>
+    <div>Look att gallery(start page)</div>
+}

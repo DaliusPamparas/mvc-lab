@@ -11,7 +11,15 @@ namespace MVC_Lab1_3.Areas.Admin.Controllers
         // GET: Admin/Home
         public ActionResult Index()
         {
-            return View();
+            
+                if(Session ["user"] == null)
+                {
+                    return RedirectToAction("Login", "Login");
+
+                }
+                return View();
+            
+            
         }
     }
 }
