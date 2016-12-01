@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleApp", "SimpleApp\Simp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC-test1", "MVC-test1\MVC-test1.csproj", "{D42A17E3-0C99-4AAE-A28B-3471E43E0E0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mvc-Areas-test", "Standart-test\mvc-Areas-test.csproj", "{F66B67A0-94D7-4618-A228-AF2BA820F6F1}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{365E0B42-8039-4FC0-9027-2E7D076E6BBB}"
 	ProjectSection(SolutionItems) = preProject
 		PublishScripts\AzureVMPublishModule.psm1 = PublishScripts\AzureVMPublishModule.psm1
@@ -30,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC-lab1-4", "MVC-lab1-4\MV
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc_entity1", "Mvc_entity1\Mvc_entity1.csproj", "{0A09FFA1-DE14-4BF6-953D-FF9E50E87F27}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kunskap_ajax1", "Kunskap_ajax1\Kunskap_ajax1.csproj", "{EAD80980-C2E8-43B0-A713-1F653BB82F65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,10 +44,6 @@ Global
 		{D42A17E3-0C99-4AAE-A28B-3471E43E0E0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D42A17E3-0C99-4AAE-A28B-3471E43E0E0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D42A17E3-0C99-4AAE-A28B-3471E43E0E0C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F66B67A0-94D7-4618-A228-AF2BA820F6F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F66B67A0-94D7-4618-A228-AF2BA820F6F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F66B67A0-94D7-4618-A228-AF2BA820F6F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F66B67A0-94D7-4618-A228-AF2BA820F6F1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DD791D9A-D7E5-46A7-B6DF-40E0B6C33226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DD791D9A-D7E5-46A7-B6DF-40E0B6C33226}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD791D9A-D7E5-46A7-B6DF-40E0B6C33226}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -68,6 +64,10 @@ Global
 		{0A09FFA1-DE14-4BF6-953D-FF9E50E87F27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A09FFA1-DE14-4BF6-953D-FF9E50E87F27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A09FFA1-DE14-4BF6-953D-FF9E50E87F27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAD80980-C2E8-43B0-A713-1F653BB82F65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAD80980-C2E8-43B0-A713-1F653BB82F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAD80980-C2E8-43B0-A713-1F653BB82F65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAD80980-C2E8-43B0-A713-1F653BB82F65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

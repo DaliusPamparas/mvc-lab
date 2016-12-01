@@ -1,0 +1,45 @@
+﻿@model Kunskap_ajax1.Models.adressBook
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<h1>Book</h1>
+
+@{
+    var ajaxOptions = new AjaxOptions
+    {
+        HttpMethod = "POST",
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "list"
+    };
+
+}
+
+@using (Ajax.BeginForm("Create", ajaxOptions))
+{
+<table border="0">
+    <tr>
+        <td>Name</td>
+       <td> @Html.TextBoxFor(adressBook => adressBook.Name)</td>
+    </tr>
+    <tr>
+        <td>Phone number</td>
+        <td> @Html.TextBoxFor(adressBook => adressBook.PhoneNumber)</td>
+    </tr>
+    <tr>
+        <td>Adress</td>
+        <td> @Html.TextBoxFor(adressBook => adressBook.Adress)</td>
+    </tr>
+
+
+</table>
+<input class="btn-default" type="submit" value="Add person" />
+
+}
+
+
+<div id="list">
+    @{Html.RenderAction("All");}
+</div>

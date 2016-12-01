@@ -1,0 +1,30 @@
+﻿@model List<Kunskap_ajax1.Models.adressBook>
+
+@{
+    var ajaxOptions = new AjaxOptions
+    {
+        HttpMethod = "POST",
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "result"
+    };
+    var ajaxOptionsEdit = new AjaxOptions
+    {
+        HttpMethod = "GET",
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "list"
+    };
+}
+<h3>List of Person</h3>
+@foreach (var item in Model)
+{
+  
+        @item.Name
+        @item.Adress
+        @item.PhoneNumber
+      
+      <br />
+    
+    
+
+}
+
