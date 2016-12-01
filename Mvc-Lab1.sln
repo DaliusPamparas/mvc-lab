@@ -26,6 +26,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcLoginLogout", "MvcLoginL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC-Lab1-3", "MVC-Lab1-3\MVC-Lab1-3.csproj", "{AED313CD-68D9-449A-B68E-C1BBBC9F9959}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC-lab1-4", "MVC-lab1-4\MVC-lab1-4.csproj", "{147C220F-6DA9-4E35-8944-364A9B5D99C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc_entity1", "Mvc_entity1\Mvc_entity1.csproj", "{0A09FFA1-DE14-4BF6-953D-FF9E50E87F27}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +60,14 @@ Global
 		{AED313CD-68D9-449A-B68E-C1BBBC9F9959}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AED313CD-68D9-449A-B68E-C1BBBC9F9959}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AED313CD-68D9-449A-B68E-C1BBBC9F9959}.Release|Any CPU.Build.0 = Release|Any CPU
+		{147C220F-6DA9-4E35-8944-364A9B5D99C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{147C220F-6DA9-4E35-8944-364A9B5D99C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{147C220F-6DA9-4E35-8944-364A9B5D99C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{147C220F-6DA9-4E35-8944-364A9B5D99C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A09FFA1-DE14-4BF6-953D-FF9E50E87F27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A09FFA1-DE14-4BF6-953D-FF9E50E87F27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A09FFA1-DE14-4BF6-953D-FF9E50E87F27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A09FFA1-DE14-4BF6-953D-FF9E50E87F27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
