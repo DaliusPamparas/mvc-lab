@@ -1,0 +1,40 @@
+﻿@model IEnumerable<MVC3.Models.Gallery>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Albums.AlbumName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GalleryName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Albums.AlbumName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GalleryName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.GalleryID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.GalleryID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.GalleryID })
+        </td>
+    </tr>
+}
+
+</table>
