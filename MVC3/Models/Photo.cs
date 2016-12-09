@@ -10,8 +10,7 @@ namespace MVC3.Models
     {
         public int PhotoID { get; set; }
         public string Comment { get; set; }
-        [NotMapped]
-        public HttpPostedFileBase File { get; set; }
+        public string Filename { get; set; }
 
         public int GalleryID { get; set; }
         public virtual Gallery Gallery { get; set; }

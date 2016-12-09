@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using MVC3.Models;
+using System.IO;
 
 namespace MVC3.Controllers
 {
@@ -47,18 +48,29 @@ namespace MVC3.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "PhotoID,Comment,GalleryID")] Photo photo)
+        public ActionResult Create(Photo photo, HttpPostedFileBase[] files)
         {
-            if (ModelState.IsValid)
-            {
-                db.Photos.Add(photo);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
+            string destination = Server.MapPath("~/photofiles/");
 
-            ViewBag.GalleryID = new SelectList(db.Galleries, "GalleryID", "GalleryName", photo.GalleryID);
-            return View(photo);
+            using (ApplicationDbContext cx = new ApplicationDbContext())
+            {
+                foreach (var file in files)
+                {
+                    Photo newPhoto = new Photo()
+                    {
+                        Comment = photo.Comment,
+                        GalleryID = photo.GalleryID,
+                        Filename = file.FileName,
+                    };
+
+                    cx.Photos.Add(newPhoto);
+                    cx.SaveChanges();
+
+                    file.SaveAs(Path.Combine(destination, file.FileName));
+                }
+            }
+   
+            return RedirectToAction("Index");
         }
 
         // GET: Photos/Edit/5
