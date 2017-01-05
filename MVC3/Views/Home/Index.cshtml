@@ -17,6 +17,8 @@
             foreach (var gallery in album.Galleries)
             {
                 foreach (var photo in gallery.Photos)
+
+
                 {
                     <img src="~/photofiles/@photo.Filename" width="220" />
                     @*@Html.Partial("_Photo",photo)*@
