@@ -5,7 +5,7 @@
     {
         HttpMethod = "POST",
         InsertionMode = InsertionMode.Replace,
-        UpdateTargetId = "result"
+        UpdateTargetId = "list"
     };
     var ajaxOptionsEdit = new AjaxOptions
     {
@@ -18,10 +18,13 @@
 @foreach (var item in Model)
 {
   
-        @item.Name
-        @item.Adress
-        @item.PhoneNumber
-      
+        @item.Name  
+        @item.Adress 
+        @item.PhoneNumber 
+        @Ajax.ActionLink($"Delete { item.Name}", "Delete", new { id = item.ID }, ajaxOptions)
+        @Ajax.ActionLink($"Edit {item.Name}", "Edit", new { id = item.ID }, ajaxOptionsEdit)
+
+
       <br />
     
     

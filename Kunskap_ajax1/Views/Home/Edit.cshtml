@@ -1,0 +1,23 @@
+﻿
+@model Kunskap_ajax1.Models.adressBook
+
+@{
+    var ajaxOptions = new AjaxOptions
+    {
+        HttpMethod = "POST",
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "edit"
+    };
+}
+Edit value
+@using (Ajax.BeginForm("Edit", ajaxOptions))
+{
+
+    @Html.EditorFor(x => x.Name)
+    @Html.EditorFor(x => x.Adress)
+    @Html.EditorFor(x => x.PhoneNumber)
+    <input type="submit" value="Edit" />
+}
+<div id="edit">
+    @{Html.RenderAction("All");}
+</div>

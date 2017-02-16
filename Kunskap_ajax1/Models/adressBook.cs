@@ -15,9 +15,6 @@ namespace Kunskap_ajax1.Models
         public string Adress { get; set; }
 
 
-        public adressBook()
-        {
-            ID = Guid.NewGuid();
-        }
+       
     }
 }
